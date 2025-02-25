@@ -1,0 +1,7 @@
+<h1>Leads List</h1>
+<a href="{% url 'add-lead' %}">Add New Lead</a>
+<ul>
+    {% for lead in leads %}
+    <li>{{ lead.first_name }} {{ lead.last_name }} - {{ lead.email }}</li>
+    {% endfor %}
+</ul>
