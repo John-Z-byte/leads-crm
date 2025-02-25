@@ -19,6 +19,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('leads.urls')),  # This includes leads, NOT crm_project
+    path('leads/', include('leads.urls')),
 ]
-
